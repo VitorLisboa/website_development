@@ -1,0 +1,30 @@
+# Django framework
+Django==4.2.4
+
+# Pillow for image handling
+Pillow==9.3.0
+
+# Cloudinary (optional, for cloud-based image storage)
+cloudinary==1.30.0
+
+# PostgreSQL driver (replace with your database driver if necessary)
+psycopg2==2.9.6
+
+# If using AWS S3 for file storage
+boto3==1.28.0
+django-storages==1.14.0
+
+# Django REST Framework (if you plan to create an API)
+djangorestframework==3.14.0
+
+# Django Allauth (for extended authentication features, including social login)
+django-allauth==0.57.0
+
+# Gunicorn (for running the application in production)
+gunicorn==21.0.0
+
+# For forms and validation (although Django comes with good form handling)
+django-crispy-forms==2.0
+
+# Optional: Django Debug Toolbar (for development/debugging purposes)
+django-debug-toolbar==4.1

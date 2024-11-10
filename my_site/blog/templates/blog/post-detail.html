@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    All My Posts
+{% endblock title %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "blog/post-detail.css" %}" />
+{% endblock %}
+{% block content %}
+  <section id = "summary">
+    <h2> Post Title </h2>
+    <article>
+        <img src="{% static "blog/images/mountain.jpg" %}" alt="Post Title" />
+        <address> By ClickCat </address>
+        <div>
+            Last updated on <time> July 10th </time>
+        </div>
+    </article>
+  </section>
+  <main>
+       
+    <p>Last weekend, we decided to escape the hustle and bustle of the city and take a spontaneous trip to the nearby mountains. The drive up was filled with scenic views of lush forests and winding roads that promised an adventure ahead. With the sun shining brightly, it was the perfect day for a hike.</p>
+        
+    <p>Once we arrived, the fresh mountain air instantly revived us. The trail started off gently, leading us through dense trees and small streams that flowed gently over rocks. As we climbed higher, the terrain became steeper, but the views grew more breathtaking with each step. We could see valleys stretching out below us, dotted with wildflowers and framed by towering peaks.</p>
+    
+    <p>At the summit, we were rewarded with a panoramic view that took our breath away. The silence at the top was calming, broken only by the occasional call of a bird soaring above. After spending some time taking in the scenery and capturing memories with our cameras, we began our descent, already planning our next mountain adventure.</p>
+  </main>
+
+ {% endblock%}

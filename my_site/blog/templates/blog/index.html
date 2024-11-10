@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    My Blog
+{% endblock title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/posts.css" %}" />
+    <link rel="stylesheet" href="{% static "blog/index.css" %}" />
+{% endblock %}
+{% block content %}
+
+</header>
+<section id="welcome">
+    <header>
+        <img src="{% static "blog/images/max.png" %}" alt="Catarina - Project Owner" />
+        <h2> CLICKCAT BLOG </h2>
+    </header>
+    <p> Hi, welcome to ClickCat</p>
+</section> 
+
+<section id="latest-post">
+   
+        <h2> My latest projects </h2>
+    <ul>
+        {% include "blog/includes/post.html" %}
+    </ul>
+    
+</section> 
+
+<section id= "about"> 
+    <h2> What I do </h2>
+    <p>I love programing,  I love to help others to do it as well</p>
+    <p>
+        My goal is to help :-p
+    </p>
+</section> 
+
+  
+{% endblock %}
